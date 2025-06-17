@@ -20,6 +20,11 @@ import Slider from "react-slick";
 import image from "./image/bg-img-01.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Carousel from 'react-bootstrap/Carousel';
+import image1 from "./image/slide1.webp";
+import image2 from "./image/slide_3.webp";
+import { FaBahai } from "react-icons/fa";
+import { IoSunnySharp } from "react-icons/io5";
 function App() {
   const settings = {
     dots: true,
@@ -30,9 +35,9 @@ function App() {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear"
-    
   };
   return (
+
     <>
       <header>
         <Navbar className='top' class='header-top'>
@@ -94,25 +99,80 @@ function App() {
       </header>
       <hero>
 
+        <Carousel fade>
+          <Carousel.Item>
+            <img className='carousel-image' src={image} alt="First slide" />
+            <Carousel.Caption>
+              <h3>
+                "Advanced Science Of Care
+                That Uplifts And Inspires."
+              </h3>
+              <p>
+                Specially priced diamond studs and tennis bracelets. These timeless </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img className='carousel-image' src={image1} alt="Second slide" />
+            <Carousel.Caption>
+              <h3>
+                "Your Skin's Best Solutions for Every Concern."
+              </h3>
+              <p>
+                Bring your love to life with a handcrafted design that perfectly</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img className='carousel-image' src={image2} alt="Third slide" />
+            <Carousel.Caption>
+              <h3>
+                "Advanced Science Of Care
+                That Uplifts And Inspires."</h3>
+              <p>Specially priced diamond studs and tennis bracelets. These timeless</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
         <div className="slider-container">
           <Slider {...settings}>
             <div>
-              <h3><img src={image} alt="" style={{width:"100%"}} /></h3>
+              <h3><FaBahai />BLOSSOM</h3>
             </div>
             <div>
-              <h3>2</h3>
+              <h3><IoSunnySharp />REVITALIZE</h3>
             </div>
             <div>
-              <h3>3</h3>
+              <h3><FaBahai />BLOSSOM</h3>
             </div>
-            
+            <div>
+              <h3><IoSunnySharp />REVITALIZE</h3>
+            </div>
+            <div>
+              <h3><FaBahai />BLOSSOM</h3>
+            </div>
+            <div>
+              <h3><IoSunnySharp />REVITALIZE</h3>
+            </div>
+            <div>
+              <h3><FaBahai />BLOSSOM</h3>
+            </div>
+            <div>
+              <h3><IoSunnySharp />REVITALIZE</h3>
+            </div>
           </Slider>
         </div>
 
 
-
-
       </hero>
+
+      <main>
+        <Container className="pt-5">
+          <h4 className='heading'>EXCLUSIVE</h4>
+          <span className='heading1'>Backed by Science, Perfected for You.</span>
+        </Container>
+
+
+      </main>
 
 
 
