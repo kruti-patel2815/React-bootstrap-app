@@ -39,6 +39,12 @@ import img4 from "./image/a2.webp";
 import img5 from "./image/a1.webp";
 import { FaStar } from "react-icons/fa";
 import photo from "./image/BrighteningSerum_96bd55b9-b0f8-4ce8-82a6-53269ea9c0e9 (1).webp";
+import cleanser from "./image/Cleanser_2_1.webp";
+import p1 from "./image/image1.webp";
+import p2 from "./image/image2.webp";
+import p3 from "./image/image3.webp";
+import p4 from "./image/image4.webp";
+import p5 from "./image/289308348_570360974501923_4268642918911341495_n.webp";
 function App() {
   const settings = {
     dots: true,
@@ -243,7 +249,8 @@ function App() {
             <Col>
               <h2 className="heading3 ">AMAZING</h2>
               <span><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></span>
-              <p>The Ring Is AMAZING. It's An Eye Catcher For Everyone. Extremely Well Made And We Love It</p>
+              <p className='heading4'>The Ring Is AMAZING. It's An Eye Catcher For Everyone. Extremely Well Made And We Love It</p>
+              <h5 className='heading5'>— Joseph M.</h5>
             </Col>
             <Col>
               <img src={photo} alt="" />
@@ -252,6 +259,92 @@ function App() {
 
         </Container>
       </rating>
+      <bunch>
+
+        <div className="background-container">
+          <div className="top-left-box">
+            <h2 className="heading3 ">BUNCH COLLECTION</h2>
+            <span className="heading1 text-center">
+              Personalized Formulas <br />Tailored Just for You.
+            </span>
+            <p className="heading6 text-left">
+
+              Our formulas are carefully crafted to work best for you, with only the  <br /> essential ingredients needed for great results.
+
+            </p>
+            <div className='parallax-banner__btn  align-items-center'>
+              <div className='mt-3'>
+                <div className='parallax-banner__btn align-items-center'>
+                  <div className='mt-3'>
+                    <a
+                      href="#"
+                      className="btn"
+                      style={{
+                        backgroundColor: 'black',
+                        color: 'white',
+                        padding: '15px 50px',
+                        border: 'none',
+                        borderRadius: '4px',
+                        display: 'inline-block',
+                        textDecoration: 'none'
+                      }}
+                    >
+                      Shop Now
+                    </a>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </bunch>
+      <journey>
+        <Container>
+          <div className='margin'>
+            <h1 className="text-left">
+              Make Us A Part Of Your Skin<br /> Care Journey.
+            </h1>
+
+            <Row className=" text-center flex-nowrap overflow-auto pt-4">
+              <Col xs="auto"><img src={p1} alt="" style={{ width: '260px' }} /></Col>
+              <Col xs="auto"><img src={p2} alt="" style={{ width: '260px' }} /></Col>
+              <Col xs="auto"><img src={p3} alt="" style={{ width: '260px' }} /></Col>
+              <Col xs="auto"><img src={p4} alt="" style={{ width: '260px' }} /></Col>
+
+            </Row>
+            <Row className="text-center flex-nowrap overflow-auto pt-4">
+              <Col><a href="#" className="btn btn-underline">Plant Extracts</a></Col>
+              <Col><a href="#" className="btn btn-underline">One Of A Kind SPF</a></Col>
+              <Col><a href="#" className="btn btn-underline">Highly Effective</a></Col>
+              <Col><a href="#" className="btn btn-underline">Advanced Science</a></Col>
+            </Row>
+          </div>
+
+
+        </Container>
+      </journey>
+      <faqs>
+        <div className='faqs'>
+          <Container>
+            <h2 className="heading3 ">FAQS</h2>
+            <p className='heading7'>Frequently Asked Questions</p>
+            <Row>
+              <Col>
+                <img src={p5} alt="" /></Col>
+              <Col>
+                <h3 className='q1'>How do you choose what materials to use?</h3>
+                <h3 className='q1'>Where are your products made?</h3>
+                <h3 className='q1'>What are you doing to be more sustainable?</h3>
+              </Col>
+            </Row>
+          </Container>
+
+        </div>
+      </faqs>
 
 
 
