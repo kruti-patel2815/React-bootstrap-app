@@ -45,6 +45,13 @@ import p2 from "./image/image2.webp";
 import p3 from "./image/image3.webp";
 import p4 from "./image/image4.webp";
 import p5 from "./image/289308348_570360974501923_4268642918911341495_n.webp";
+import Accordion from 'react-bootstrap/Accordion';
+import { FaFacebook } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaPinterest } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 function App() {
   const settings = {
     dots: true,
@@ -333,18 +340,147 @@ function App() {
             <h2 className="heading3 ">FAQS</h2>
             <p className='heading7'>Frequently Asked Questions</p>
             <Row>
-              <Col>
-                <img src={p5} alt="" /></Col>
-              <Col>
-                <h3 className='q1'>How do you choose what materials to use?</h3>
-                <h3 className='q1'>Where are your products made?</h3>
-                <h3 className='q1'>What are you doing to be more sustainable?</h3>
+              <Col md={6}>
+                <img src={p5} alt="" style={{ width: "100%" }} /></Col>
+              <Col md={6}>
+                <Accordion defaultActiveKey="0">
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header className='q1'>How do you choose what materials to use?</Accordion.Header>
+                    <Accordion.Body>
+                      Act natural. We also use mostly natural materials, which break down better and are less of a pollutant than the synthetic fibers that are being found in oceans and water supplies.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header className='q1'>Where are your products made?</Accordion.Header>
+                    <Accordion.Body>
+                      We want you to be completely satisfied with your purchase. If for any reason you are not, you can return any item in its original condition within 30 days of receipt for a full refund or exchange. Please ensure that the products have all original tags and packaging. To initiate a return, visit our "Returns" page and follow the instructions provided. Remember to keep your receipt as proof of purchase. Some exclusions may apply, so be sure to check our detailed return policy for more information.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="2">
+                    <Accordion.Header className='q1'>What are you doing to be more sustainable?</Accordion.Header>
+                    <Accordion.Body>
+                      Absolutely. We prioritize the security of our customers' data. Our website uses Secure Socket Layer (SSL) encryption to ensure that your personal and payment information is kept safe and private. This means that any information you input during the checkout process is encrypted before being transmitted over the internet. Additionally, we never store your credit card details on our servers. For more information about how we protect your data, please refer to our Privacy Policy.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="3">
+                    <Accordion.Header className='q1'>Why choose SPF for Pore and Acne Care?</Accordion.Header>
+                    <Accordion.Body>
+                      Absolutely. We prioritize the security of our customers' data. Our website uses Secure Socket Layer (SSL) encryption to ensure that your personal and payment information is kept safe and private. This means that any information you input during the checkout process is encrypted before being transmitted over the internet. Additionally, we never store your credit card details on our servers. For more information about how we protect your data, please refer to our Privacy Policy.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
               </Col>
             </Row>
           </Container>
 
         </div>
       </faqs>
+      <hr style={{ margin: "0", color: 'black', height: '2px' }}></hr>
+      <footer>
+        <div className='footer-top'>
+          <Container>
+            <Row>
+              <Col lg={3} md={6}>
+                <div className='footer-left'>
+                  <h4>CONTACT US</h4>
+                  <p>Email: clientcare@bunch.com</p>
+                  <p>Phone: 1.888.838.3022</p>
+                  <p>Hours: Monday – Thursday: 9AM – 7PM ET, Friday: 9AM – 2PM ET</p>
+                </div>
+              </Col>
+              <Col lg={2} md={4}>
+                <div className='left1'>
+                  <h4>INFORMATION</h4>
+                  <ul>
+                    <li className='footer-list'>
+                      <a href="#">My Account</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Order History</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Wishlist</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Specials</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Press</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </Col>
+              <Col lg={2} md={4}>
+                <div className='left2'>
+                  <h4>FOOTER MENU</h4>
+                  <ul>
+                    <li className='footer-list'>
+                      <a href="#">Search</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Contact Us</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Returns</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Site Map</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Brands</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </Col>
+              <Col lg={2} md={4}>
+                <div className='left3'>
+                  <h4>COLLECTIONS</h4>
+                  <ul>
+                    <li className='footer-list'>
+                      <a href="#">Acne Care</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Basic Care</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Blazers</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Bundles</a>
+                    </li>
+                    <li className='footer-list'>
+                      <a href="#">Extra Care</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </Col>
+              <Col lg={3} md={6}>
+                <div className='footer-right'>
+                  <h1>Let's stay in touch.</h1>
+                  <p>Sign up for private sales, new launches, style tips and more.</p>
+                  <input type="text" placeholder='Your email' style={{ padding: '10px' }} />
+                  <button type='submit' className='btn-theme'>SUBSCRIBE</button>
+                  <ul className='flex'>
+                    <li className='list-item'><a href="#"><FaFacebook /></a></li>
+                    <li className='list-item'><a href="#"><FaXTwitter /></a></li>
+                    <li className='list-item'><a href="#"><FaPinterest /></a></li>
+                    <li className='list-item'><a href="#"><FaInstagram /></a></li>
+                    <li className='list-item'><a href="#"><FaYoutube /></a></li>
+                    <li className='list-item'><a href="#"><FaTiktok /></a></li>
+                  </ul>
+
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className='footer-bottom'>
+          <p className='bottom'> © 2024 - Bunch. All rights reserved.</p>
+        </div>
+      </footer>
 
 
 
