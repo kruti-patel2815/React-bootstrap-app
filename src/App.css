@@ -39,7 +39,90 @@ html {
 .navbar-nav .dropdown-toggle::after {
   margin-left: 5px;
 }
+/* Custom CSS for navbar */
+@media (min-width: 992px) {
+  /* Desktop Layout */
+  .d-lg-flex.w-100 {
+    min-height: 60px;
+  }
+  
+  /* Left Navigation */
+  .left-nav-section {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .left-nav-section .navbar-nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
+  
+  /* Center Logo */
+  .logo-center {
+    position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  /* Right Navigation */
+  .right-nav-section {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .right-nav-section .navbar-nav {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
+  
+  /* Nav Items Spacing */
+  .nav-link.dropdown-toggle.px-2 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    white-space: nowrap;
+  }
+  
+  .nav-link.px-2 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
 
+/* Medium screens (1000px - 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .nav-link.dropdown-toggle.px-2 {
+    padding-left: 0.4rem !important;
+    padding-right: 0.4rem !important;
+    font-size: 0.9rem;
+  }
+  
+  .nav-link.px-2 {
+    padding-left: 0.4rem !important;
+    padding-right: 0.4rem !important;
+  }
+  
+  .logo-center img {
+    width: 160px !important;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .nav-link.dropdown-toggle.px-2 {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  .nav-link.px-2 {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+}
 /* Hero Section */
 .carousel-image {
   width: 100%;
